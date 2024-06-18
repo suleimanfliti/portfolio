@@ -23,6 +23,9 @@
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -34,6 +37,34 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <style>
+    ul, li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.swiper-container {
+	height: 100%;
+	width: 100%;
+}
+
+.swiper-slide {
+	text-align: center;
+	transition: all 1s ease;
+	opacity: 0.5;
+}
+
+.swiper-slide-next + li {
+	transition: all 1s ease;
+	opacity: 1;
+}
+
+@media all and (max-width: 1240px) {
+	.swiper-slide {
+		opacity: 1;
+	}
+}
+  </style>
 </head>
 
 <body>
@@ -61,7 +92,7 @@
           <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
           <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>skills</span></a></li>
           <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>projects</span></a></li>
           <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
         </ul>
       </nav><!-- .nav-menu -->
@@ -210,7 +241,6 @@
                 <li>Developed multiple systems and websites ,Implemented responsive and user- friendly UI components using angular framework , react.js, Next.js
                 </li>
                 <li>created new features, functionality and capabilities for many Projects </li>
-                <li>Translating UI/UX design wireframes into high quality, reusable markup code</li>
               </ul>
             </div>
             <div class="resume-item">
@@ -244,59 +274,81 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Portfolio</h2>
+          <h2>Projects</h2>
         </div>
 
-
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/hero.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="https://heroes-mocha.vercel.app/" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-              <div style="text-align: center;"><p>Heroes Station</p>
-              <p>
-                A website for an entertainment complex that includes displaying information about the complex and its
-sections, its features, the services it provides, in addition to the possibility of booking an appointment for a private party within one of the complex’s sections.
-              </p>
-              </div>
-              
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/akar.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="http://akar.ziryab.net/" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-              <div style="text-align: center;"><p>akar</p><br>
-              <p>A real estate system that aims to display properties available for sale or rent with comprehensive details
-                including prices and the number of rooms and bathrooms, in addition to a control panel that enables us to
-                control all properties of the real estates.</p>
-              </div>
-            </div>
-          </div>
- 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/cars.jfif" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-              <div style="text-align: center;"><p>cargo shipping system</p><br>
-                <p>A platform that help transportation companies automate and optimize the shipping process, track
-                  deliveries, compare the carrier rates, search all transportation modes</p>
+   
+          <div class="swiper-container">
+            <ul class="swiper-wrapper" style="gap: 50px;">
+              <li class="swiper-slide">
+                <div class="portfolio-item filter-app">
+                  <div class="portfolio-wrap">
+                 <img src="assets/img/hero.png" class="img-fluid" alt="">
+                 <div class="portfolio-links">
+                   <a href="https://heroes-woad.vercel.app/" title="More Details"><i class="bx bx-link"></i></a>
+                 </div>
+                 <div style="text-align: center;"><p>Heroes Station</p>
+         
+                 </div>
+                 
+               </div>
+               </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="portfolio-item filter-app">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/akar.png" class="img-fluid" alt="">
+                    <div class="portfolio-links">
+                      <a href="http://akar.ziryab.net/" title="More Details"><i class="bx bx-link"></i></a>
+                    </div>
+                    <div style="text-align: center;"><p>akar</p><br>
+       
+                    </div>
+                  </div>
                 </div>
-            </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="portfolio-item filter-app">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/ALMOTTHEDON.png" class="img-fluid" alt="">
+                    <div class="portfolio-links">
+                      <a href="https://e-commerce-store-delta-three.vercel.app/" title="More Details"><i class="bx bx-link"></i></a>
+                    </div>
+                    <div style="text-align: center;"><p>AL MOTTHEDON</p><br>
+                      </div>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="portfolio-item filter-app">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/skin.png" class="img-fluid" alt="">
+                    <div class="portfolio-links">
+                      <a href="https://ecommerce-skin-care.vercel.app/" title="More Details"><i class="bx bx-link"></i></a>
+                    </div>
+                    <div style="text-align: center;"><p>E-commerce Skin Care </p><br>
+                      </div>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="portfolio-item filter-app">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/education.png" class="img-fluid" alt="">
+                    <div class="portfolio-links">
+                      <a href="https://danatabbaa.github.io/EducationSystem/" title="More Details"><i class="bx bx-link"></i></a>
+                    </div>
+                    <div style="text-align: center;"><p>Edumark</p><br>
+                      </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
-
-        </div>
 
       </div>
     </section><!-- End Portfolio Section -->
+
 
 
     <!-- ======= Contact Section ======= -->
@@ -349,6 +401,36 @@ sections, its features, the services it provides, in addition to the possibility
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
+  <!-- Include Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+ 
+  <script>
+    var Swiper = new Swiper('.swiper-container', {
+	direction: 'horizontal',
+	visibilityFullFit: true,
+	loop: true,
+	autoplay: 4000,
+	slidesPerView: 5,
+	grabCursor: true,
+	autoplayDisableOnInteraction: false,
+	speed: 2000,
+	breakpoints: {
+		480: {
+			slidesPerView: 1
+		},
+		740: {
+			slidesPerView: 2
+		},
+		960: {
+			slidesPerView: 3
+		},
+		1280: {
+			slidesPerView: 4
+		}
+	}
+})
+  </script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
